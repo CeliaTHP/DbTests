@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">JsonTest</string>
+    <string name="info_title">Titre</string>
+    <string name="info_syn">Synopsis</string>
+    <string name="info_date">Date de sortie</string>
+    <string name="info_genre">Genre(s)</string>
 </resources>

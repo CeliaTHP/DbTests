@@ -43,13 +43,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        /*
+
         RequestQueue requestQueue = Volley.newRequestQueue(this);
 
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url, null
                 , new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
-                TextView textView = findViewById(R.id.textView);
+                TextView textView = findViewById(R.id.title);
 
                 try {
                     textView.setText("Title : " + response.getString("title" ) + "\nDate : " + response.getString("release_date") + "\nSynopsis : " + response.getString("overview"));
@@ -65,7 +67,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        requestQueue.add(request);
+        requestQueue.add(request); */
+
+        List<MovieInfo> movieInfoList = new ArrayList<>();
+        movieInfoList.add(new MovieInfo("Best Movie World", "Horror","C'est la fin du monde omg où sont les super zéros call 007", "29-02-2023"));
+        movieInfoList.add(new MovieInfo("La La Land", "Musical","City of stars... are your shining just for me ? ", "12-06-2018"));
+        movieInfoList.add(new MovieInfo("Cyber James Bond", "Action","Literally James Bond...but with a PROJECT skin ! ", "00-007-2007"));
+
+        ListView movieInfo = findViewById(R.id.movie_info_view);
+        movieInfo.setAdapter(new MovieInfoAdapter(this, movieInfoList));
+
+
 
     }
 }

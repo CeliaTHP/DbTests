@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:layout_centerHorizontal="true"
+    android:weightSum="2"
+    >
+
+
+    <ImageView
+        android:id="@+id/poster"
+        android:layout_width="63dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/no_image" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/info_title"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/title"
+            android:text="@string/info_genre"
+            android:layout_marginStart="20dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/genre"
+            android:layout_marginStart="20dp"
+            android:text="@string/info_date"
+            android:textSize="12sp"
+
+            />
+
+        <TextView
+            android:id="@+id/syn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/genre"
+            android:paddingTop="10dp"
+            android:text="@string/info_syn"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
