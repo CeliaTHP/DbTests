@@ -50,15 +50,11 @@ public class MovieInfoAdapter extends BaseAdapter {
 
         MovieInfo currentInfo = getItem(i);
         String movieTitle = currentInfo.getTitle();
-        String movieGenre = currentInfo.getGenre();
         String movieSyn = currentInfo.getSyn();
         String movieDate = currentInfo.getDate();
 
         TextView title = view.findViewById(R.id.title);
         title.setText(movieTitle);
-
-        TextView genre = view.findViewById(R.id.genre);
-        genre.setText(movieGenre);
 
         TextView syn = view.findViewById(R.id.syn);
         syn.setText(movieSyn);

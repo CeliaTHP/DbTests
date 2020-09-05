@@ -4,15 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity"
     >
 
     <ListView
+        android:layout_margin="10dp"
         android:id="@+id/movie_info_view"
         android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+<!--
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/info_title"
         />
 
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/info_date"
+        />
+
+    <TextView
+        android:id="@+id/syn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/info_syn"
+        />
+
+!-->
 
 
 
